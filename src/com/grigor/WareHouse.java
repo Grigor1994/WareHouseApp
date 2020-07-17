@@ -61,7 +61,7 @@ public class WareHouse {
                         int needAdd = Math.min(emptyCapacity, list.size());
 
                         int listIndex = 0;
-                        for (int i = 0; i < needAdd; i++) {
+                        for (int i = 0; i < needAdd && listIndex<list.size(); i++) {
                             Material material = list.get(listIndex);
                             boolean deleted = currentMaterialsSet.remove(material);
                             if (deleted) {
